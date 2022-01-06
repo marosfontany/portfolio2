@@ -1,0 +1,426 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    min-height: 100%;
+}
+
+footer {
+    font-size: 13px;
+    font-family: "Montserrat";
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+header {
+    background: #fff;
+    height: 105px;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+    position: fixed;
+}
+
+
+
+/* header starts here */
+
+h1 {
+    font-family: "Noto Serif JP";
+    font-size: 25px;
+    text-align: left;
+    text-transform: uppercase;
+    float: left;
+    margin-top: 36px;
+    padding-left: 50px;
+}
+
+.site-title {
+    text-decoration: none;
+    color: black;
+}
+
+.main-menu {
+    list-style: none;
+    text-align: left;
+    padding-left: 60px;
+    margin-top: 40px;
+
+}
+
+.main-menu li {
+    display: inline-block;
+}
+
+.main-menu a {
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat",sans-serif;
+    padding: 0px 40px;
+}
+
+.main-menu a:hover {
+    color: #3895D3;
+}
+
+/* header ends here */
+
+
+/* content starts here */
+
+.first {
+    margin-top: 0;
+    padding-top: 105px;
+    background-image: url("picture10.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 700px;
+}
+
+h2 {
+    font-family: "Noto Serif JP";
+    color: #fff;
+    float: none;
+    text-align: right;
+    padding: 0px 155px;
+    font-size: 40px;
+    padding-top: 50px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "Noto Serif JP";
+    color: #fff;
+    float: none;
+    text-align: left;
+    padding: 0px 100px;
+    font-size: 30px;
+    padding-top: 50px;
+    /*background-color: rgba(0, 0, 255, 0.171);*/
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.thirdaside {
+    font-family: "Noto Serif JP";
+    color: #fff;
+    float: none;
+    text-align: right;
+    padding: 0px 100px;
+    font-size: 27px;
+    padding-top: 120px;
+    background-color: rgba(0, 0, 255, 0.171);
+    margin: 0;
+}
+
+.thirdasidep {
+    font-family: "Noto Serif JP";
+    color: #fff;
+    text-align: right;
+    font-size: 16px;
+    background-color: rgba(0, 0, 255, 0.171);
+    padding-left: 30px;
+    margin-top: 0;
+    padding: 50px 100px;
+    margin: 0;
+}
+
+.firstp {
+    font-family: "Noto Serif JP";
+    color: #fff;
+    text-align: right;
+    font-size: 17px;
+    margin-top: 0;
+    padding: 37px 0px;
+    margin: 0;
+    width: 320px;
+    line-height: 1.5;
+    padding-left: 1110px;
+}
+
+.secondp {
+    font-family: "Noto Serif JP";
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+    padding-left: 30px;
+    margin-top: 0;
+    padding: 50px 100px;
+    padding-bottom: 237px;
+    width: 400px;
+    line-height: 1.5;
+}
+
+.second {
+    margin-top: 0;
+    padding-top: 0;
+    background-image: url("picture12.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.third {
+    margin-top: 0;
+    padding-top: 0;
+    background-image: url("photo7.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.fourth {
+    margin-top: 0;
+    padding-top: 0;
+    background-image: url("photo9.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+}
+
+.link-space {
+    font-size: 40px;
+}
+
+.link-space  h1,a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link-space h1,a:hover {
+    color: #3895D3;
+}
+
+.motto {
+    margin-top: 45px;
+    padding-top: 0;
+    background-color: aliceblue;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 800px;
+}
+
+.motto-title {
+    font-family: "Noto Serif JP";
+    color: black;
+    font-size: 20px;
+    padding-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: aliceblue;
+}
+
+.motto-title-second {
+    font-family: "Noto Serif JP";
+    color: black;
+    font-size: 19px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    text-align: center;
+    font-style: italic;
+    padding-top: 0;
+    margin-top: 0;
+    background-color: aliceblue;
+}
+
+.photogallery {
+    float: left;
+
+}
+
+.photogallery img {
+    width: 300px;
+    height: 300px;
+    padding-bottom: 40px;
+}
+
+.photogallery img:first-child {
+    padding-left: 40px;
+}
+
+.video {
+    padding-right: 100px;
+    padding-top: 100px;
+    float: right;
+}
+
+.video-desc {
+    color: #fff;
+    padding-left: 95px;
+    padding-top: 70px;
+    float: left;
+    line-height: 1.5;
+}
+
+iframe{
+    border-width: 0px;
+}
+
+h6 {
+    font-family: "Noto Serif JP";
+    color: #fff;
+    float: none;
+    text-align: left;
+    padding: 0px 100px;
+    font-size: 30px;
+    padding-top: 97px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* content ends here */
+
+/* pre-footer starts here */
+
+.pre-footer {
+    height: 500px;
+    background-color: aliceblue;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 45px;
+}
+
+.footer-column {
+    float: left;
+    width: 470px;
+}
+
+.map {
+    float: left;
+    padding-left: 50px;
+}
+
+h4 {
+    font-family: "Noto Serif JP";
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-left: 80px;
+    margin-top: 36px;
+    width: 300px;
+}
+
+.pre-footer-text-center {
+    padding-left: 80px;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.button {
+    background-color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: rgb(82, 170, 247);
+    color: white;
+}
+
+.adress {
+    font-family: "Montserrat",sans-serif;
+    text-align: left;
+    float: left;
+    padding-left: 50px;
+    margin-bottom: 40px;
+}
+
+.blog-posts {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+}
+
+.blog-posts li{
+    font-family: "Montserrat",sans-serif;
+    font-style: normal;
+    text-align: left;
+    float: left;
+    border-top: solid 1px rgb(202, 202, 202);
+    padding: 20px 0 10px 0;
+}
+
+.blog-posts a {
+    text-decoration: none;
+    border-top: solid 1px rgb(202, 202, 202);
+    padding: 20px 0 10px 0;
+    color: rgb(0, 0, 255);
+
+}
+
+.blog-posts a:hover {
+    color: brown;
+}
+
+.footer-column-center {
+    float: left;
+    width: 470px;
+    height: 500px;
+    border-left: solid 1px rgb(202, 202, 202);
+    border-right: solid 1px rgb(202, 202, 202);
+}
+
+#email {
+    font-family: "Montserrat",sans-serif;
+    text-transform: uppercase;
+    border: solid 1px rgb(0, 0, 255);
+    margin-left: 70px;
+    padding: 10px 10px 10px 20px;
+    color: rgb(63, 63, 63);
+    float: left;
+}
+
+.second-button {
+    background-color: rgb(165, 165, 165);
+    border: solid 1px #fff;
+    font-family: "Montserrat",sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 11px 28px;
+    float: right;
+    margin-right: 83px;
+}
+
+.second-button:hover {
+    background-color: rgb(82, 170, 247);
+    color: white;
+}
+
+h5 {
+    font-family: "Noto Serif JP";
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-left: 80px;
+    padding-top: 90px;
+    width: 300px;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 0px 10px;
+    width: 26px;
+    height: 26px;
+
+}

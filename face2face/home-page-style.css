@@ -1,0 +1,914 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    --webkit-scroll-behavior: smooth;
+}
+  
+.container {
+    max-width: 62.5em;
+    margin: 0 auto;
+    padding: 0 1.25em;
+}
+  
+body {
+    background-color: white;
+    width: 100%;
+}
+
+main {
+    padding-top: 98px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 98px;
+    position: fixed;
+    background-color: white;
+}
+
+.logo {
+    margin-left: 44px;
+    margin-top: 10px;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 17px;
+    margin-top: 39px;
+    color: #2C698D;
+}
+
+h2 {
+    padding-top: 66px;
+    padding-left: 39px;
+    font-size: 40px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+h3 {
+    padding-left: 60px;
+    font-size: 45px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #2C698D;
+    text-transform: uppercase;
+}
+
+h4 {
+    text-align: center;
+    font-size: 22px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #FF865E;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+h5 {
+    text-align: center;
+    font-size: 11px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #707070;
+    padding: 20px 0px;
+}
+
+/* ids */
+
+#homepage {
+    background-color: #A2D2FF;
+}
+
+#product {
+    background-color: #FEF9EF;
+}
+
+#aboutus {
+    background-color: #E3F6F5;
+    padding-bottom: 60px;
+}
+
+#prices {
+    background-color: #FEF9EF;
+    padding-bottom: 50px;
+}
+
+#partners {
+    background-color: #A2D2FF;
+    padding-bottom: 70px;
+}
+
+/* homepage section */
+
+.phones {
+    display: none;
+}
+
+.phone1 {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10%;
+
+}
+
+.phone2 {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10%;
+
+}
+
+.paragraphs {
+    margin-top: 70px;
+    color: #565656;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 26px;
+    padding-bottom: 40px;
+}
+
+/* main menu */
+
+nav {
+    display: flex;
+    overflow: hidden;
+}
+
+.mainmenu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: 100vh;   
+    background-color: #A2D2FF;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    padding-top: 100px;
+    overflow-y: scroll;
+}
+.mainmenu a {
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mainmenu {
+    list-style: none;
+    text-align: left;
+    padding-left: 60px;
+    line-height: 105px;
+    margin: 0;
+  
+}
+
+.pop div {
+    width: 25px;
+    height: 4px;
+    background-color: #2C698D;
+    margin: 5px;
+    cursor: pointer;
+}
+  
+.pop {
+    position: absolute;
+    text-align: right;
+    right: 71px;
+    top: 33px;
+}
+
+.pop {
+    display: block;
+}
+
+/* product section */
+
+.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 11px 28px;
+    color: #FF865E;
+    border: 3px solid #FF865E;
+    border-radius: 12px;
+    font-size: 12px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+.button:hover {
+    color: #A2D2FF;
+    border: 3px solid #A2D2FF;
+}
+
+.one{
+    grid-area: one;
+}
+
+.two{
+    grid-area: two;
+}
+
+.three{
+    grid-area: three;
+}
+
+.four{
+    grid-area: four;
+}
+
+.five{
+    grid-area: five;
+}
+
+.pic{
+    grid-area: pic;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-areas:
+    "pic"
+    "one"
+    "two"
+    "three"
+    "four"
+    "five";
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+	grid-gap: 30px;
+    margin: 40px;
+
+}
+
+.product-grid:last-child {
+    padding-bottom: 100px;
+    margin-bottom: 0;
+}
+
+.number {
+    font-size: 14px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #FF865E;
+    border: 3px solid #FF865E;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.texth {
+    font-size: 14px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #FF865E;
+    text-align: left;
+    padding: 0;
+}
+
+.textp {
+    font-size: 12px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #838383;
+    margin-top: 12px;
+}
+
+/* about section */
+
+.about {
+    text-align: center;
+    font-size: 25px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #2C698D;
+    padding-top: 60px;
+}
+
+.aboutp {
+    text-align: center;
+    width: 320px;
+    font-size: 13px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.play {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.icon:last-child {
+    padding-bottom: 60px;
+}
+
+.icons {
+    text-align: center;
+    width: 228px;
+    font-size: 13px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000;
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.icons:last-child {
+    padding-bottom: 40px;
+}
+
+.button2 {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 11px 28px;
+    color: #000000;
+    border: 3px solid #000000;
+    border-radius: 12px;
+    font-size: 12px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+.pricesp {
+    text-align: center;
+    width: 320px;
+    font-size: 13px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #A6A5A2;
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.subscription {
+    background-color: white;
+    width: 300px;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding-bottom: 50px;
+}
+
+.subsh {
+    text-align: center;
+    font-size: 16px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #A6A5A2;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.subsp {
+    text-align: center;
+    font-size: 23px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #FF865E;
+    text-transform: uppercase;
+}
+
+.subspp {
+    text-align: left;
+    font-size: 12px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #000000;
+    padding-top: 25px;
+    padding-left: 10px;
+    border-bottom: 1px solid #9c9b992d;
+    margin: 30px;
+}
+
+.subst {
+    text-align: center;
+    font-size: 14px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+/* partners section */
+
+.reward {
+    background-color: white;
+    margin: 40px;
+    width: 200px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.reward-title {
+    font-size: 15px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #2C698D;
+    text-transform: uppercase;
+}
+
+.reward-p {
+    font-size: 14px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000;
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+.reward-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 11px 28px;
+    color: #2C698D;
+    border: 3px solid #2C698D;
+    border-radius: 12px;
+    font-size: 12px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    margin-top: 40px;
+}
+
+.reward-button:hover {
+    color: #FF865E;
+    border: 3px solid #FF865E;
+}
+
+/* contact section */
+
+.location {
+    width: 100%;
+    height: 375px;
+    background-color: #FF865E;
+    padding-top: 150px;
+}
+
+.location img,
+.facebook img,
+.quote img,
+.call img,
+.mail img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.locationp {
+    text-align: center;
+    width: 228px;
+    font-size: 13px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.quotep {
+    text-align: center;
+    width: 228px;
+    font-size: 13px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #2C698D;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding: 20px 0px;
+}
+
+.facebook {
+    width: 100%;
+    height: 375px;
+    background-color: #FFD5BD;
+    padding-top: 150px;
+}
+
+.quote {
+    width: 100%;
+    height: 375px;
+    background-color: #ffffff;
+    padding-top: 150px;
+}
+
+.call {
+    width: 100%;
+    height: 375px;
+    background-color: #FFD5BD;
+    padding-top: 150px;
+}
+
+.mail {
+    width: 100%;
+    height: 375px;
+    background-color: #FF865E;
+    padding-top: 150px;
+}
+
+/* footer */
+
+.footertext {
+    text-align: center;
+    font-size: 15px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000;
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+
+.footertext a {
+    text-decoration: none;
+}
+
+.footer-grid {
+    display: grid;
+    grid-auto-flow: column;
+	grid-gap: 30px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.arrow {
+    padding-top: 20px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 18px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000;
+}
+
+h5 a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo2 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media(min-width: 700px) {
+    h2 {
+        padding-top: 66px;
+        text-align: center;
+        font-size: 40px;
+        font-family: acumin-pro, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        padding-left: 0;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 45px;
+        font-family: acumin-pro, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        color: #2C698D;
+        text-transform: uppercase;
+        padding-left: 0;
+    }
+
+    .subscription {
+        background-color: white;
+        width: 400px;
+        margin-top: 60px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    .lego {
+        grid-area: lego;
+    }
+
+    .tivoli {
+        grid-area: tivoli;
+    }
+
+    .zoo {
+        grid-area: zoo;
+    }
+
+    .water {
+        grid-area: water;
+    }
+
+    .planet {
+        grid-area: planet;
+    }
+
+    .rewards-grid {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-areas: 
+        "lego tivoli"
+        "zoo water"
+        "planet planet";
+        justify-content: center;
+        grid-gap: 31px;
+    }
+}
+
+@media (min-width: 785px) {
+
+    .pricesp {
+        text-align: center;
+        width: 700px;
+        font-size: 13px;
+        font-family: acumin-pro, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #A6A5A2;
+        margin-top: 12px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .icon {
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 50px;
+        justify-content: center;
+    }
+
+    .aboutp {
+        text-align: center;
+        width: 650px;
+        font-size: 13px;
+        font-family: acumin-pro, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: black;
+        margin-top: 12px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+}
+
+@media (min-width: 1140px) {
+
+    .rewards-grid {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-areas: 
+        "lego tivoli zoo"
+        "water planet .";
+        justify-content: center;
+        grid-gap: 31px;
+    }
+
+    footer {
+        padding-top: 100px;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0px;
+    }
+
+    .location,
+    .facebook,
+    .quote,
+    .call,
+    .mail {
+        width: 100%;
+        height: 150%;
+        padding-top: 80px;
+    }
+
+    .logos {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 300px;
+        margin-right: 300px;
+        padding-bottom: 40px;
+    }
+
+    .logos1 {
+        margin: 10px;
+    }
+
+    .section-grid {
+        display: grid;
+        
+        grid-template-areas:
+        "one pic four"
+        "two pic five"
+        "three pic .";
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+
+    #product {
+        padding-bottom: 80px;
+    }
+
+    .product-grid {
+        display: grid;
+     
+    }
+
+    .rewards-grid {
+        display: grid;
+        grid-auto-flow: column;
+    }
+}
+
+@media(min-width: 1200px) {
+
+    .rewards-grid {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-areas: 
+        "lego tivoli zoo water planet";
+        justify-content: center;
+        grid-gap: 31px;
+    }
+    
+    .homepage1 {
+        grid-area: homepage1;
+    }
+    .homepage2 {
+        grid-area: homepage2;
+    }
+    .homepage3 {
+        grid-area: homepage3;
+    }
+    .homepage4 {
+        grid-area: homepage4;
+    }
+
+    .homepage-grid {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-areas:
+        "homepage1 homepage3"
+        "homepage2 homepage3"
+        "homepage4 homepage3";
+    }
+
+    .paragraphs {
+        text-align: left;
+        width: 376px;
+        padding-left: 67px;
+        font-size: 11px;
+    }
+
+    h2 {
+        padding-top: 66px;
+        text-align: left;
+        font-size: 40px;
+        font-family: acumin-pro, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        padding-left: 270px;
+    }
+
+    h3 {
+        text-align: left;
+        font-size: 45px;
+        font-family: acumin-pro, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        color: #2C698D;
+        text-transform: uppercase;
+        padding-left: 337px;
+    }
+
+    #homepage {
+        padding-top: 144px;
+        padding-bottom: 70px;
+    }
+
+    .phone1 {
+        display: none;
+    }
+
+    .phones {
+        display: initial;
+    }
+}
+
+@media(min-width: 1440px) {
+    .pop{
+        display: none;
+    }
+
+    .mainmenu {
+        position: absolute;
+        all:initial;
+        list-style: none;
+        text-align: right;
+        padding-left: 200px;
+        line-height: 105px;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .mainmenu li {
+        display: inline-block;
+    }
+      
+    .mainmenu a {
+        color: black;
+        font-size: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Montserrat",sans-serif;
+        padding: 0px 40px;
+    }
+      
+    .mainmenu a:hover {
+        color: #3895D3;
+        font-weight: bold;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}/* CSS Document */
+
